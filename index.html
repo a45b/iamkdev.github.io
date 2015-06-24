@@ -34,9 +34,6 @@
   })();
 
 </script>
-<button type="button" id="buttontext">Please click</button>
-
-<br/><br/>
 
 <select id="industry" name="industry">
   <option selected="selected" value="">Please select the industry.</option>
@@ -62,13 +59,14 @@
   <option value="151">MERCHANT RESTAURANT</option>
 </select>
 
+<br/><br/>
+
+<button type="button" id="buttontext">Please click</button>
+
+
 <script src="//code.jquery.com/jquery-1.4.3.min.js"></script>
 <script type="text/javascript">
 
-  $("#buttontext" ).click(function(){
-     ga('send', 'event', 'submitbutton', 'click', 'Submit Button');
-  });
-  
   $('#industry').change(function() {
     ga('send', 'event', 'industrydrdo', 'change', 'Industry dropdown');
     _gaq.push(['_trackEvent', 'Dropdown', 'change', $(this).val() ]);
@@ -77,6 +75,12 @@
   $('#businessPartnerId').change(function() {
     ga('send', 'event', 'businessptrdrdo', 'change', 'Business Partner dropdown');
     _gaq.push(['_trackEvent', 'Dropdown', 'change', $(this).val() ]);
+  });
+  
+  $("#buttontext" ).click(function(){
+     ga('send', 'event', 'submitbutton', 'click', 'Submit Button');
+     var comboSelection = $('#businessPartnerId').val() + $('#industry');
+     _gaq.push(['_trackEvent', 'Dropdown', 'change',  comboSelection]);
   });
   
   ga('send', 'pageview');
