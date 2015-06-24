@@ -17,6 +17,9 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   
+  ga('create', 'UA-64452245-1', 'auto', {'allowLinker': true});
+  ga('require', 'linker');
+  ga('linker:autoLink', ['codepen.io'] );
 </script>
 
 <script type="text/javascript">
@@ -64,18 +67,7 @@
 
 <script src="//code.jquery.com/jquery-1.4.3.min.js"></script>
 <script type="text/javascript">
-  // Load the plugin.
   
-  ga('create', 'UA-64452245-1', 'auto', {'allowLinker': true});
-  ga('require', 'linker');
-  ga('linker:autoLink', ['codepen.io'] );
-  
-  /*
-  //code has to the other domain i.e. discoverglobalsignage.com
-  ga('create', 'UA-64452245-1', 'auto', {
-    'allowLinker': true
-  });
-  */
   
   $('#industry').change(function() {
     ga('send', 'event', 'industrydrdo', 'change', 'Industry dropdown');
