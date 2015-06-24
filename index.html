@@ -32,7 +32,14 @@
 <script>
   
   
-  ga('send', 'event', 'button', 'click', '#buttontext', 1);
+  //ga('send', 'event', 'button', 'click', '#buttontext', 1);
+  ga('send', {
+    'hitType': 'event',          // Required.
+    'eventCategory': 'button',   // Required.
+    'eventAction': 'click',      // Required.
+    'eventLabel': '#buttontext',
+    'eventValue': 4
+  });
   ga('send', 'pageview');
 </script>
 </body>
