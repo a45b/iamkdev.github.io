@@ -48,40 +48,23 @@
   <option value="151">MERCHANT RESTAURANT</option>
 </select>
 
-<!-- <script src="http://discover-dev.aerofulfillment.com/js/ocpsdk/jquery/jquery.js"></script> -->
 <script src="//code.jquery.com/jquery-1.4.3.min.js"></script>
 <script>
- /*
-  var submitbtn = document.getElementById('buttontext');
-  addListener(submitbtn, 'click', function() {
-    ga('send', 'event', 'button', 'click', 'submit button');
-  });
-  
-  function addListener(element, type, callback) {
-   if (element.addEventListener) element.addEventListener(type, callback);
-   else if (element.attachEvent) element.attachEvent('on' + type, callback);
-  }
-  */
+
   //ga('send', 'event', 'button', 'click', '#buttontext', 1);
-  var _gaq = _gaq || [];
-  _gaq.push(function() {
-    var tracker = _gat._getTracker('UA-64452245-1');
-    tracker._trackPageview();
-  });
 
   $("#buttontext" ).click(function(){
      ga('send', 'event', 'submitbutton', 'click', 'Submit Button');
   });
   
   $('#industry').change(function() {
-    ga('send', 'event', 'industrydrdo', 'change', 'Industry dropdown', $(this).val());
+    ga('send', 'event', 'industrydrdo', 'change', 'Industry dropdown');
   });
   
   $('#businessPartnerId').change(function() {
-    ga('send', 'event', 'businessptrdrdo', 'change', 'Business Partner dropdown', $(this).val());
+    ga('send', 'event', 'businessptrdrdo', 'change', 'Business Partner dropdown');
   });
   
-
   ga('send', 'pageview');
 </script>
 </body>
