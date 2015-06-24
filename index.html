@@ -20,18 +20,37 @@
   //ga('send', 'pageview');
 </script>
 
-<button type="button" id="buttontext">Save</button>
+<button type="button" id="buttontext">Please click</button>
+
 <br/><br/>
-<button id="button">Please click</button>
+
+<select id="industry" name="industry">
+  <option selected="selected" value="">Please select the industry.</option>
+	<option value="HEALTHCARE">HEALTHCARE</option>
+	<option value="RESTAURANT">RESTAURANT</option>
+	<option value="RETAIL">RETAIL</option>
+	<option value="SUPERMARKET">SUPERMARKET</option>
+	<option value="OTHER">OTHER</option>
+</select>
+
 <br/><br/>
 
-<select id="businessPartnerId" name="businessPartnerId"><option value="" selected="">Please select client type.</option><option value="149">ACQUIRER - ISO - PROCESSOR - VAR</option><option value="156">CANADA ACQUIRER - ISO - PROCESSOR - VAR</option><option value="157">CANADA MERCHANT</option><option value="158">CANADA MERCHANT RESTAURANT</option><option value="163">CARIBBEAN - MEXICO MERCHANT</option><option value="164">CARIBBEAN - MEXICO MERCHANT RESTAURANT</option><option value="165">CARIBBEAN - MEXICO ORDER</option><option value="150">MERCHANT</option><option value="151">MERCHANT RESTAURANT</option></select>
+<select id="businessPartnerId" name="businessPartnerId">
+  <option value="" selected="">Please select client type.</option>
+  <option value="149">ACQUIRER - ISO - PROCESSOR - VAR</option>
+  <option value="156">CANADA ACQUIRER - ISO - PROCESSOR - VAR</option>
+  <option value="157">CANADA MERCHANT</option>
+  <option value="158">CANADA MERCHANT RESTAURANT</option>
+  <option value="163">CARIBBEAN - MEXICO MERCHANT</option>
+  <option value="164">CARIBBEAN - MEXICO MERCHANT RESTAURANT</option>
+  <option value="165">CARIBBEAN - MEXICO ORDER</option>
+  <option value="150">MERCHANT</option>
+  <option value="151">MERCHANT RESTAURANT</option>
+</select>
 
-<h1>Hello Github Page</h1>
-<p>I'm hosted with GitHub Pages.</p>
-
-
+<script src="http://discover-dev.aerofulfillment.com/js/ocpsdk/jquery/jquery.js"></script>
 <script>
+ /*
   var submitbtn = document.getElementById('buttontext');
   addListener(submitbtn, 'click', function() {
     ga('send', 'event', 'button', 'click', 'submit button');
@@ -41,8 +60,21 @@
    if (element.addEventListener) element.addEventListener(type, callback);
    else if (element.attachEvent) element.attachEvent('on' + type, callback);
   }
-  
+  */
   //ga('send', 'event', 'button', 'click', '#buttontext', 1);
+  
+  $('#button').on('click', function() {
+    ga('send', 'event', 'button', 'click', 'Submit Button');
+  });
+  
+  $('#industry').on('change', function() {
+    ga('send', 'event', 'button', 'click', 'Industry dropdown');
+  });
+  
+  $('#businessPartnerId').on('change', function() {
+    ga('send', 'event', 'button', 'click', 'Business Partner dropdown');
+  });
+  
   ga('send', 'pageview');
 </script>
 </body>
