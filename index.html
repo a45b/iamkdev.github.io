@@ -69,11 +69,11 @@
   });
   
   $('#industry').change(function() {
-    ga('send', 'event', 'industrydrdo', 'change', 'Industry dropdown');
+    ga('send', 'event', 'industrydrdo', 'change', 'Industry dropdown', $(this).val());
   });
   
   $('#businessPartnerId').change(function() {
-    ga('send', 'event', 'businessptrdrdo', 'change', 'Business Partner dropdown');
+    ga('send', 'event', 'businessptrdrdo', 'change', 'Business Partner dropdown', $(this).val());
   });
   
   ga('send', 'pageview');
