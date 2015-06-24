@@ -79,7 +79,7 @@
   
   $("#buttontext" ).click(function(){
      ga('send', 'event', 'submitbutton', 'click', 'Submit Button');
-     var comboSelection = $('#businessPartnerId').val() + $('#industry');
+     var comboSelection = $('#businessPartnerId').val() +'-'+ $('#industry');
      _gaq.push(['_trackEvent', 'Combo Selection', 'click',  comboSelection]);
   });
   
