@@ -36,35 +36,35 @@
           }
     </script>
     <script type="text/javascript">
-      var deferredPrompt;
 
-    window.addEventListener('beforeinstallprompt', function(e) {
-    console.log('beforeinstallprompt Event fired');
-    e.preventDefault();
-
-    // Stash the event so it can be triggered later.
-    deferredPrompt = e;
-
-    return false;
-    });
-
-    btnSave.addEventListener('click', function() {
-    if(deferredPrompt !== undefined) {
-      deferredPrompt.prompt();
-      deferredPrompt.userChoice.then(function(choiceResult) {
-
-        console.log(choiceResult.outcome);
-
-        if(choiceResult.outcome == 'dismissed') {
-          console.log('User cancelled home screen install');
-        }
-        else {
-          console.log('User added to home screen');
-        }
-        deferredPrompt = null;
-      });
-    }
-    });
+        // var deferredPrompt;
+        // window.addEventListener('beforeinstallprompt', function(e) {
+        // console.log('beforeinstallprompt Event fired');
+        // e.preventDefault();
+        //
+        // // Stash the event so it can be triggered later.
+        // deferredPrompt = e;
+        //
+        // return false;
+        // });
+        //
+        // btnSave.addEventListener('click', function() {
+        // if(deferredPrompt !== undefined) {
+        //   deferredPrompt.prompt();
+        //   deferredPrompt.userChoice.then(function(choiceResult) {
+        //
+        //     console.log(choiceResult.outcome);
+        //
+        //     if(choiceResult.outcome == 'dismissed') {
+        //       console.log('User cancelled home screen install');
+        //     }
+        //     else {
+        //       console.log('User added to home screen');
+        //     }
+        //     deferredPrompt = null;
+        //   });
+        // }
+        // });
     </script>
  </body>
 </html>
