@@ -1,6 +1,6 @@
 {
-  "name": "Air Horner",
-  "short_name": "Air Horner",
+  "name": "Add 2 Home",
+  "short_name": "add2home",
   "icons": [{
         "src": "images/touch/Airhorner_128.png",
         "type": "image/png",
@@ -28,7 +28,7 @@
         "type": "image/png",
         "sizes": "512x512"
       }],
-  "start_url": "/add2home",
+  "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#2196F3",
   "theme_color": "#2196F3"

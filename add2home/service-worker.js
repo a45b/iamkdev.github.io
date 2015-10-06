@@ -23,9 +23,10 @@ importScripts('scripts/sw-cache-polyfill.js');
 
 self.addEventListener('install', function(e) {
   e.waitUntil(
-    caches.open('airhorner').then(function(cache) {
+    caches.open('add2home').then(function(cache) {
       return cache.addAll([
-        '/add2home'
+        '/',
+        '/index.html'
       ]).then(function() {
         return self.skipWaiting();
       });
