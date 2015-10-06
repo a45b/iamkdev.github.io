@@ -37,10 +37,10 @@
 
 
 
-      <script src="/scripts/main.min.js"></script>
+      <script src="scripts/main.min.js"></script>
       <script>
                   if('serviceWorker' in navigator) {
-                    navigator.serviceWorker.register('service-worker.js', { scope: '/' })
+                    navigator.serviceWorker.register('scripts/service-worker.js', { scope: '/' })
                       .then(function(registration) {
                             console.log("Service Worker Registered");
                       });
