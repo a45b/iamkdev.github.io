@@ -16,10 +16,10 @@
  *  limitations under the License
  *
  */
- 
+
 // Version 0.57
 
-importScripts('/cache-polyfill.js');
+importScripts('scripts/sw-cache-polyfill.js');
 
 self.addEventListener('install', function(e) {
   e.waitUntil(
@@ -45,7 +45,7 @@ self.addEventListener('activate', function(event) {
 
 self.addEventListener('fetch', function(event) {
   console.log(event.request.url);
-  
+
   event.respondWith(
     caches.match(event.request).then(function(response) {
       return response || fetch(event.request);
