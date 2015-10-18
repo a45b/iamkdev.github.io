@@ -1,9 +1,0 @@
-git checkout -b new_branch_name
-
-git branch
-git fetch
-git checkout -b reskin-feature origin/reskin-feature 
-git branch
-
-
-http://www.php.net/manual/en/function.curl-errno.php
