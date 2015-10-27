@@ -25,7 +25,7 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">    	
       <main class="mdl-layout__content container">
       	<div id="vue">
-	      	<h3>{{greeting}} {{message}}</h3>
+	      	<h3>Hello, {{message}}</h3>
 	        <div class="mdl-textfield mdl-js-textfield">
 		    	<input class="mdl-textfield__input" type="text" v-model="message"/>
 		    	<label class="mdl-textfield__label"></label>
@@ -41,8 +41,7 @@
 		var vue = new Vue({
 		    el: '#vue',
 		    data: {
-		        message: 'Guest',
-		        greeting: 'Welcome',
+		        message: 'Guest'
 		    }
 		});
     </script> 
