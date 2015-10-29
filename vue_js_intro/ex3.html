@@ -21,7 +21,7 @@
     </div>
 
     <div id="v2">
-        {{ m2 }}
+        {{ m2 | capitalize }}
     </div>
 
 
@@ -30,14 +30,14 @@
 		var v1 = new Vue({
 		    el: '#v1',
 		    data: {
-		        m1: 'I am 1'
+		        m1: 'i am one'
 		    }
 		});
 
         var v2 = new Vue({
             el: '#v2',
             data: {
-                m2: 'I am 2'
+                m2: 'i am two'
             }
         });
     </script> 
