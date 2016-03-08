@@ -17,24 +17,13 @@
 		var number 	= document.getElementById('number').value;
 		var url 	= 'https://numverify.com/php_helper_scripts/phone_api.php?secret_key=acbde50d35e16eed1bf44acbe7152ff2&number='+number;
 		fetch(url, {
-			mode: 'no-cors',
-			headers: {  
-		      "Content-type": "application/json; charset=UTF-8",  
-		      "Access-Control-Allow-Origin": "*"
-		    },
+			mode: 'no-cors'
 		  })  
 		  .then(  
 		    function(response) {
-		      console.log(response.headers.get('Content-Type'));  
-    console.log(response.headers.get('Date'));
-
-    console.log(response.status);  
-    console.log(response.statusText);  
-    console.log(response.type);  
-    console.log(response.url);  
-		      if (response.status !== 200) {  
-		        console.log('Looks like there was a problem. Status Code: ' +  response.status);  
-		        return;  
+		      if (response.status == 200 || response.status === 0) {  
+		        console.log(response);
+		        return;
 		      }
 
 		      // Examine the text in the response  
