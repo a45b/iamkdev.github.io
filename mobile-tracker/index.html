@@ -6,20 +6,21 @@
 <body>
 	
 	<input type="text" id="number" name="number">
-	<button type="button" onclick="tracker()">Find Details</button>
+	<button type="button" onclick="tracker();">Find Details</button>
 
 
 <!-- https://numverify.com/php_helper_scripts/phone_api.php?secret_key=acbde50d35e16eed1bf44acbe7152ff2&number=918023478173 -->
 
 <script type="text/javascript">
 	
-	function tracker () {
+	function tracker() {
 		var number 	= document.getElementById('number').value;
-		var url 	= 'https://numverify.com/php_helper_scripts/phone_api.php?secret_key=acbde50d35e16eed1bf44acbe7152ff2&number='+number';
+		var url 	= 'https://crossorigin.me/https://numverify.com/php_helper_scripts/phone_api.php?secret_key=acbde50d35e16eed1bf44acbe7152ff2&number='+number;
 		fetch(url, {
 			mode: 'no-cors',
 			headers: {  
-		      "Content-type": "application/json; charset=UTF-8"
+		      "Content-type": "application/json; charset=UTF-8",  
+		      "Access-Control-Allow-Origin": "*"
 		    },
 		  })  
 		  .then(  
