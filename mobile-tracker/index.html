@@ -21,6 +21,7 @@
 		  })  
 		  .then(  
 		    function(response) {
+		      console.log(response.json());
 		      if (response.status == 200 || response.status === 0) {  
 		        console.log(response);
 		        return;
