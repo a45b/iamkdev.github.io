@@ -1,0 +1,89 @@
+<div class="rw-clr">
+    <div class="rw-onange-bg" id="divstore">
+        <a class="rw-fl rw-orange-min-btn" href="javascript:void(0);" title="Minimize"></a>
+        <span class="rw-fl rw-white-b16 pad-l10 rw-txt-shadow">Customize Store</span>
+    </div>
+    <div class="rw-school-information rw-clr" id="divSchoolStore">
+        <div class="rw-clr">
+            <label>
+                Store Name<span>*</span>
+            </label>
+
+<input type="text" name="store_name" id="store_name" value="Testing School" errmsg="Store name is required !" maxlength="100">
+        </div>
+		<p class="rw-error-msg rw-fl pad-l160 mar-l10" id="store_name_err"></p>
+		<div class="rw-clr rw-overfl pad-t15">
+            <label>
+                Store URL<span>*</span>
+            </label>
+            <p class="rw-fl pad-r5 pad-t5 mar-t2 rw-light-gray-13">
+                www.rokkitwear.com/
+            </p>
+
+<input type="text" name="store_url" id="store_url" value="TestingSchool" errmsg="Store url is required !" maxlength="100" style="width: 190px;">        </div>
+        <p class="rw-error-msg rw-fl pad-l160 mar-l10" id="store_url_err"></p>
+        <div class="rw-clr pad-t15 pad-b25">
+            <label>
+                Background
+            </label>
+            <div class="">
+                <div class="rw-fl pad-t5 mar-t2">
+                    <input class="rw-store-radio" type="radio" id="radColor" name="radColor" value="color" checked="">
+                    <p class="rw-fl">
+                        Plain Color
+                    </p>
+                </div>
+            </div>
+            <div class="rw-clr pad-t15">
+                <label>
+                </label>
+                <div class="">
+                    <div class="rw-fl pad-t5 mar-t2 pad-r5">
+                        <input type="radio" class="rw-store-radio" id="radColor" name="radColor" value="image">
+                        <p class="rw-fl">
+                            Image
+                        </p>
+                    </div>
+                    <div class="rw-fl pad-t5" style="width:120px;">
+
+<input type="hidden" name="MAX_FILE_SIZE" value="2097152" id="MAX_FILE_SIZE">
+<input type="file" name="image_name" id="image_name">                    </div>
+                    <p class="rw-error-msg rw-fl pad-l160 mar-l10" id="image_err"></p>
+                </div>
+                <div class="rw-fl pad-l5 rw-fr pad-t10">
+                    <img width="53" height="43" src="/images/rw-user-img.gif" alt="" title="">
+                </div>
+            </div>
+            <div class="rw-clr pad-t15">
+                <label>
+                    Font Color
+                </label>
+                <div>
+                    <div class="rw-fl pad-t5 mar-t2">
+                    	<input class="rw-store-radio" type="radio" id="radFont" name="radFont" value="nocolor">
+                    	<p class="rw-fl">
+                    	    Default color
+                    	</p>
+                	</div>
+                    <div class="rw-fl pad-t5 mar-l10 mar-t2">
+                        <input class="rw-store-radio" type="radio" id="radFont" name="radFont" value="pickcolor" checked="">
+                    	<p class="rw-fl">
+                    	     Pick Color
+                    	</p>
+                    </div>
+                     <div class="rw-color-pick-box rw-fl mar-l10 mar-t2">
+                     	<div class="rw-color-pick kolorPicker" id="divFont" style="background-color: #000000;">
+                     		<img src="/images/rw-arrow-down.gif" id="imgFont" class="rw-pick-arrow mar-t15 mar-l15" alt="Color Picker" title="Color Picker">
+                        </div>
+                    </div>
+					<div class="rw-clr rw-overfl pad-t15">
+			            <label>
+			                Seo Custom Tag
+			            </label>
+
+<input type="text" name="seo_custom_tag" id="seo_custom_tag" value="" maxlength="100" style="width: 190px;">			       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
