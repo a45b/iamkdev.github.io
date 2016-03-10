@@ -84,7 +84,7 @@
               '</div>';
           },
           item: function(data, escape) {
-            return '<div class="item"><span class="flag-icon flag-icon-'+ escape(data.code).toLowerCase() +'"></span><a href="' + escape(data.dial_code) + '">' + escape(data.dial_code) + '</a></div>';
+            return '<div class="item"><span class="flag-icon flag-icon-'+ escape(data.code).toLowerCase() +'"></span><a href="' + escape(data.dial_code) + '">' + escape(data.dial_code) + ' - '+escape(data.name)+'</a></div>';
           }
         },
         create: false
