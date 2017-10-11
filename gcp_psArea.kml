@@ -4,7 +4,7 @@
 		<name>gcp_psArea</name>
 		<Style id='Style2-point-1'>
 			<IconStyle>
-				<color>ff0000ff</color>
+				<color>50780000</color>
 				<scale>1.0</scale>
 				<Icon>
 					<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
@@ -19,7 +19,7 @@
 		</Style>
 		<Style id='Style2-point-1-hover'>
 			<IconStyle>
-				<color>ff0000ff</color>
+				<color>50780000</color>
 				<scale>1.0</scale>
 				<Icon>
 					<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
@@ -44,7 +44,7 @@
 				<scale>0.0</scale>
 			</LabelStyle>
 			<LineStyle>
-				<color>7fffffff</color>
+				<color>50780000</color>
 				<width>1</width>
 			</LineStyle>
 			<BalloonStyle>
@@ -53,7 +53,7 @@
 		</Style>
 		<Style id='Style2-line-2-hover'>
 			<LineStyle>
-				<color>7fffffff</color>
+				<color>50780000</color>
 				<width>1</width>
 			</LineStyle>
 			<BalloonStyle>
@@ -75,7 +75,7 @@
 				<scale>0.0</scale>
 			</LabelStyle>
 			<LineStyle>
-				<color>03ffffff</color>
+				<color>50780000</color>
 				<width>0</width>
 			</LineStyle>
 			<PolyStyle>
